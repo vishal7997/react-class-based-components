@@ -18,12 +18,17 @@ class Demo extends Component {
   componentDidUpdate(prevProps, prevState) {
     // useEffect with dependencies
     // LOGIC TO HANDLE SIDE EFFECTS WHENEVER STATE CHANGES
-    console.log("componentDidUpdate Called");
-    if (prevState.count != this.state.count)
-      this.setState({ count: this.count + 1 });
+    // console.log("componentDidUpdate Called");
+    // if (prevState.count != this.state.count)
+    //   this.setState({ count: this.count + 1 });
+
+    // try{
+    //     throw new Error("An error has occured!");
+    // } catch(error) {
+    //     alert(error.message);
+    // }
+    throw new Error("An error has occured!");
   }
-
-
 
   toggleParagraph() {
     // console.log(this);
